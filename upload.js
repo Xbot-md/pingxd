@@ -8,7 +8,7 @@ async function upload(fileStream, fileName) {
     const form = new FormData();
     form.append('file', fileStream, fileName);
 
-    const response = await axios.post('https://manager-session-ben-r7g4.onrender.com/api/upload', form, {
+    const response = await axios.post('https://ben-auth-manager.onrender.com/api/upload', form, {
         headers: form.getHeaders()
     });
 
